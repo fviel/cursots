@@ -4,6 +4,7 @@ export class Negociacoes {
     }
     adiciona(negociacao) {
         this.negociacoes.push(negociacao);
+        console.log(`Adiconado o ${negociacao.data}`);
     }
     lista() {
         return this.negociacoes;

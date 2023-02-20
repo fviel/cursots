@@ -5,6 +5,7 @@ export class Negociacoes {
 
     public adiciona(negociacao: Negociacao) {
         this.negociacoes.push(negociacao);
+        console.log(`Adiconado o ${negociacao.data}`)
     }
 
     public lista(): readonly Negociacao[] {
