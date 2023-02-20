@@ -5,7 +5,6 @@ export function escapar(target, key, descriptor) {
         if (typeof retorno === 'string') {
             retorno = retorno.replace(/<script>[\s\S]*?<\/script>/, '');
         }
-        console.log(`Decorator escapar: retorno: ${JSON.stringify(retorno)}`);
         return retorno;
     };
     return descriptor;
