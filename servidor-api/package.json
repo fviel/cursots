@@ -1,13 +1,13 @@
 {
-  "name": "app",
+  "name": "exemplo_ws",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto exemplo de ws em ts, apenas de referência",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Fernando Viel",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {

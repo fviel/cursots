@@ -4,6 +4,7 @@ export function escapar(
     descriptor: PropertyDescriptor) {
     const metodoOriginal = descriptor.value;
     descriptor.value = function (...args: any[]) {
+        console.log(`Modificando o prototype ${target.constructor.name} e adicionando getter para a proptiedade ${key}`)
         //Na linha abaixo não pode usar descriptor.value, caso contrário irá gerar um loop infinito que irá exceder a pilha de chamadas
         let retorno = metodoOriginal.apply(this, args);
         if (typeof retorno === 'string') {

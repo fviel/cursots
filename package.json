@@ -1,7 +1,7 @@
 {
-  "name": "alurabank",
+  "name": "projeto_base_typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto de exemplo, apenas para servir de referência",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
     "compile": "tsc",
     "watch": "tsc -w"
   },
-  "author": "",
+  "author": "Fernando Viel",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^6.0.0",
