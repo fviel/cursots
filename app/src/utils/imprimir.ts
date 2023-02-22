@@ -1,5 +1,5 @@
 
-import { Imprimivel } from "./imprimivel.js";
+import { Imprimivel } from "../interfaces/imprimivel.js";
 
 /**
  *  Imprimo qualquer objeto que herde de Imprimivel

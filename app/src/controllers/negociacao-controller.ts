@@ -76,6 +76,18 @@ export class NegociacaoController {
     public importarDados(): void {
         this.negociacoesServices
             .obterNegociacoes()
+            //Filtro as negociações, comparando-as
+            .then(negociacoesDeHoje => {
+                return negociacoesDeHoje.filter(negociacaoDeHoje => {
+                    return !this.negociacoes
+                        .lista()
+                        .some(negociacao => {
+                            return negociacao.ehIgual(negociacaoDeHoje);
+                        });
+                        //eh o mesmo que a linha abaixo
+                        //.some(negociacao => negociacao.ehIgual(negociacaoDeHoje));
+                })
+            })
             //neste ponto, ts converte o array dados:any[] para negociacoesDeHoje:Negociacao[] devido ao return
             .then(negociacoesDeHoje => {
                 //para cada elemento do array, adiciona a negociação
